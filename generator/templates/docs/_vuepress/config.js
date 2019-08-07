@@ -1,7 +1,7 @@
 module.exports = {
-    title: 'Hello VuePress',
+    title: '<%= options.projectName%>',
     description: 'Just playing around',
-    base:'/vuepress-demo/',
+    base:'/<%= options.projectName%>/',
     themeConfig: {
         lastUpdated: 'Last Updated',
         nav: [{
@@ -34,14 +34,14 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '/get-started/',
-                    '/install/',
                 ]
             },
             {
                 title: '组件',
+                collapsable: true,
                 children: [
-                    '/cat/',
-                    '/dog/',
+                    '/components/cat/',
+                    '/components/dog/',
                 ]
             }
         ]
