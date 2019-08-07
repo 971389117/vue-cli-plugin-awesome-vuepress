@@ -1,7 +1,7 @@
 module.exports = {
-    title: '<%= options.projectName%>',
+    title: '<%= rootOptions.projectName %>',
     description: 'Just playing around',
-    base:'/<%= options.projectName%>/',
+    base:'/<%= rootOptions.projectName %>/',
     themeConfig: {
         lastUpdated: 'Last Updated',
         nav: [{
@@ -30,20 +30,29 @@ module.exports = {
             }
         ],
         sidebar: [{
-                title: '快速启动',
-                collapsable: true,
+                title: '梦想',
+                children: [
+                    '/',
+                    '/contact',
+                    '/about',
+                ]
+            },
+            {
+                title: '开始',
+                collapsable: false,
                 children: [
                     '/get-started/',
                 ]
             },
             {
-                title: '组件',
-                collapsable: true,
+                title: '动物',
+                collapsable: false,
                 children: [
-                    '/components/cat/',
-                    '/components/dog/',
+                    '/components/',
+                    '/components/cat',
+                    '/components/dog',
                 ]
-            }
+            },
         ]
     }
 }

@@ -9,4 +9,6 @@ module.exports = (api, opts, rootOptions) => {
         "vuepress": "^1.0.3"
       }
     })
+
+    api.render('./templates')
   }
